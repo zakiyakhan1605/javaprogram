@@ -1,6 +1,6 @@
 package in.HaKhan.abstraction;
 
-public  abstract class vehicle {
+public  abstract class vehicle implements transport {
 
     public abstract void makeStsrtSound();
     public vehicle(int noOfTires) {
@@ -18,5 +18,10 @@ public  abstract class vehicle {
     }
     public void commute(){
         System.out.println("its commute");
+    }
+
+    @Override
+    public void getSetGo() {
+        System.out.println("going to place...");
     }
 }
